@@ -81,9 +81,19 @@
       "points": 1
     },
     {
-      "name": "test",
+      "name": "test_docstring_contains_param_and_return_read_float",
       "setup": "sudo -H pip3 install -r requirements.txt",
-      "run": "pytest -v  -k \"test\"",
+      "run": "pytest -v  -k \"test_docstring_contains_param_and_return_read_float\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_docstring_contains_param_and_return_read_int",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -v  -k \"test_docstring_contains_param_and_return_read_int\"",
       "input": "",
       "output": "",
       "comparison": "included",
