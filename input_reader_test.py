@@ -1,4 +1,5 @@
 from input_reader import read_float, read_int
+import inspect
 
 
 # Hier die Definitionen von read_float und read_int einfügen
@@ -65,3 +66,29 @@ def test_read_int_out_of_bounds(monkeypatch, capsys):
 def test_read_int_at_bounds(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: "20")
     assert read_int("Enter an int: ", lower_bound=20, upper_bound=40) == 20
+
+
+def test_docstring_contains_param_and_return_read_float():
+    docstring = inspect.getdoc(read_float)
+    assert docstring is not None, "Docstring fehlt"
+
+    # Überprüfen, ob für jeden Parameter ein @param Tag vorhanden ist
+    params = inspect.signature(read_float).parameters
+    for param in params:
+        assert f"@param {param}:" in docstring, f"Docstring fehlt @param für {param}"
+
+    # Überprüfen, ob ein @return Tag vorhanden ist
+    assert "@return:" in docstring, "Docstring fehlt @return"
+
+
+def test_docstring_contains_param_and_return_read_int():
+    docstring = inspect.getdoc(read_float)
+    assert docstring is not None, "Docstring fehlt"
+
+    # Überprüfen, ob für jeden Parameter ein @param Tag vorhanden ist
+    params = inspect.signature(read_float).parameters
+    for param in params:
+        assert f"@param {param}:" in docstring, f"Docstring fehlt @param für {param}"
+
+    # Überprüfen, ob ein @return Tag vorhanden ist
+    assert "@return:" in docstring, "Docstring fehlt @return"
