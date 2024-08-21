@@ -1,0 +1,62 @@
+[
+  {
+    "name": "test_read_float_valid_input",
+    "function": "test_read_float_valid_input",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_read_float_invalid_input",
+    "function": "test_read_float_invalid_input",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_read_float_out_of_bounds",
+    "function": "test_read_float_out_of_bounds",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_read_float_at_bounds",
+    "function": "test_read_float_at_bounds",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_read_int_valid_input",
+    "function": "test_read_int_valid_input",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_read_int_invalid_input",
+    "function": "test_read_int_invalid_input",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_read_int_out_of_bounds",
+    "function": "test_read_int_out_of_bounds",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_read_int_at_bounds",
+    "function": "test_read_int_at_bounds",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_docstring_contains_param_and_return_read_float",
+    "function": "test_docstring_contains_param_and_return_read_float",
+    "timeout": 10,
+    "points": 1
+  },
+  {
+    "name": "test_docstring_contains_param_and_return_read_int",
+    "function": "test_docstring_contains_param_and_return_read_int",
+    "timeout": 10,
+    "points": 1
+  }
+]
